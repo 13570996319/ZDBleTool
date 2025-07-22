@@ -8,11 +8,12 @@
 #import <Foundation/Foundation.h>
 
 // 分类头文件统一导入
-#import "Category/NSString+zdTool.h"
-#import "Category/NSData+zdTool.h"
+#import "NSString+zdTool.h"
+#import "NSData+zdTool.h"
+#import "NSObject+zdTool.h"
 
-#import "Tools/ZDBleDataModelTool.h"
-#import "Tools/ZDBleManagerTool.h"
+#import "ZDBleDataModelTool.h"
+#import "ZDBleManagerTool.h"
 
 
 
