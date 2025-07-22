@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0B4D9F622E0A33AD001428E6 /* ZDBleTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4D9F572E0A33AD001428E6 /* ZDBleTool.framework */; };
+		0B4D9F682E0A33AD001428E6 /* NSString+zdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F5E2E0A33AD001428E6 /* NSString+zdTool.m */; };
+		0B4D9F692E0A33AD001428E6 /* NSData+zdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F602E0A33AD001428E6 /* NSData+zdTool.m */; };
+		0B4D9F6A2E0A33AD001428E6 /* NSObject+zdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F622E0A33AD001428E6 /* NSObject+zdTool.m */; };
+		0B4D9F6B2E0A33AD001428E6 /* ZDBleDataModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F642E0A33AD001428E6 /* ZDBleDataModelTool.m */; };
+		0B4D9F6C2E0A33AD001428E6 /* ZDBleManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F662E0A33AD001428E6 /* ZDBleManagerTool.m */; };
+		0B4D9F6D2E0A33AD001428E6 /* ZDBleToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D9F672E0A33AD001428E6 /* ZDBleToolTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,33 +29,19 @@
 /* Begin PBXFileReference section */
 		0B4D9F572E0A33AD001428E6 /* ZDBleTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZDBleTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4D9F612E0A33AD001428E6 /* ZDBleToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDBleToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4D9F5C2E0A33AD001428E6 /* ZDBleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDBleTool.h; sourceTree = "<group>"; };
+		0B4D9F5D2E0A33AD001428E6 /* NSString+zdTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+zdTool.h"; sourceTree = "<group>"; };
+		0B4D9F5E2E0A33AD001428E6 /* NSString+zdTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+zdTool.m"; sourceTree = "<group>"; };
+		0B4D9F5F2E0A33AD001428E6 /* NSData+zdTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+zdTool.h"; sourceTree = "<group>"; };
+		0B4D9F602E0A33AD001428E6 /* NSData+zdTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+zdTool.m"; sourceTree = "<group>"; };
+		0B4D9F612E0A33AD001428E6 /* NSObject+zdTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+zdTool.h"; sourceTree = "<group>"; };
+		0B4D9F622E0A33AD001428E6 /* NSObject+zdTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zdTool.m"; sourceTree = "<group>"; };
+		0B4D9F632E0A33AD001428E6 /* ZDBleDataModelTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDBleDataModelTool.h; sourceTree = "<group>"; };
+		0B4D9F642E0A33AD001428E6 /* ZDBleDataModelTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDBleDataModelTool.m; sourceTree = "<group>"; };
+		0B4D9F652E0A33AD001428E6 /* ZDBleManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDBleManagerTool.h; sourceTree = "<group>"; };
+		0B4D9F662E0A33AD001428E6 /* ZDBleManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDBleManagerTool.m; sourceTree = "<group>"; };
+		0B4D9F672E0A33AD001428E6 /* ZDBleToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDBleToolTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0B4D9F692E0A33AD001428E6 /* Exceptions for "ZDBleTool" folder in "ZDBleTool" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				ZDBleTool.h,
-			);
-			target = 0B4D9F562E0A33AD001428E6 /* ZDBleTool */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B4D9F592E0A33AD001428E6 /* ZDBleTool */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0B4D9F692E0A33AD001428E6 /* Exceptions for "ZDBleTool" folder in "ZDBleTool" target */,
-			);
-			path = ZDBleTool;
-			sourceTree = "<group>";
-		};
-		0B4D9F652E0A33AD001428E6 /* ZDBleToolTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ZDBleToolTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0B4D9F542E0A33AD001428E6 /* Frameworks */ = {
@@ -86,6 +78,48 @@
 				0B4D9F612E0A33AD001428E6 /* ZDBleToolTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0B4D9F592E0A33AD001428E6 /* ZDBleTool */ = {
+			isa = PBXGroup;
+			children = (
+				0B4D9F5A2E0A33AD001428E6 /* Category */,
+				0B4D9F5B2E0A33AD001428E6 /* Tools */,
+				0B4D9F5C2E0A33AD001428E6 /* ZDBleTool.h */,
+			);
+			path = ZDBleTool;
+			sourceTree = "<group>";
+		};
+		0B4D9F5A2E0A33AD001428E6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0B4D9F5D2E0A33AD001428E6 /* NSString+zdTool.h */,
+				0B4D9F5E2E0A33AD001428E6 /* NSString+zdTool.m */,
+				0B4D9F5F2E0A33AD001428E6 /* NSData+zdTool.h */,
+				0B4D9F602E0A33AD001428E6 /* NSData+zdTool.m */,
+				0B4D9F612E0A33AD001428E6 /* NSObject+zdTool.h */,
+				0B4D9F622E0A33AD001428E6 /* NSObject+zdTool.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0B4D9F5B2E0A33AD001428E6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0B4D9F632E0A33AD001428E6 /* ZDBleDataModelTool.h */,
+				0B4D9F642E0A33AD001428E6 /* ZDBleDataModelTool.m */,
+				0B4D9F652E0A33AD001428E6 /* ZDBleManagerTool.h */,
+				0B4D9F662E0A33AD001428E6 /* ZDBleManagerTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0B4D9F652E0A33AD001428E6 /* ZDBleToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B4D9F672E0A33AD001428E6 /* ZDBleToolTests.m */,
+			);
+			path = ZDBleToolTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4D9F682E0A33AD001428E6 /* NSString+zdTool.m in Sources */,
+				0B4D9F692E0A33AD001428E6 /* NSData+zdTool.m in Sources */,
+				0B4D9F6A2E0A33AD001428E6 /* NSObject+zdTool.m in Sources */,
+				0B4D9F6B2E0A33AD001428E6 /* ZDBleDataModelTool.m in Sources */,
+				0B4D9F6C2E0A33AD001428E6 /* ZDBleManagerTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4D9F6D2E0A33AD001428E6 /* ZDBleToolTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +476,6 @@
 				0B4D9F6E2E0A33AD001428E6 /* Debug */,
 				0B4D9F6F2E0A33AD001428E6 /* Release */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
