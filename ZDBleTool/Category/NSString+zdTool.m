@@ -218,6 +218,35 @@
     return [NSString zd_binaryStringFromNumber:decimalValue];
 }
 
+- (NSString *)zd_thousandDecimalStringFromdecimalString {
+    if (self.floatValue >= 1000) {
+        NSNumber *number = [NSNumber numberWithFloat:self.floatValue/1000.0];
+        
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        // 设置数字样式为十进制样式
+        formatter.numberStyle = NSNumberFormatterDecimalStyle;
+        // 设置小数位数为自动，去除多余的0
+        formatter.minimumFractionDigits = 0;
+        formatter.maximumFractionDigits = 2;
+        NSString *result = [NSString stringWithFormat:@"%@K",[formatter stringFromNumber:number]];
+        return result;
+    }
+    return self;
+    
+    
+    
+}
+
+- (NSString *)zd_decimalStringFromThousandDecimalString {
+    if ([self.uppercaseString containsString:@"K"]) {
+        NSInteger result = self.floatValue *1000;
+        return [NSString stringWithFormat:@"%ld",result];
+    }
+    return self;
+    
+    
+}
+
 #pragma mark - 私有辅助方法
 
 + (NSData *)zd_dataFromHexString:(NSString *)hexString {

@@ -14,22 +14,30 @@
 @implementation ZDBleToolTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    // 在每个测试方法之前调用
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    // 在每个测试方法之后调用
+    [super tearDown];
 }
 
+#pragma mark - 基础测试
+
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // 这是一个基础的功能测试示例
+    XCTAssertTrue(YES, @"基础测试通过");
 }
 
 - (void)testPerformanceExample {
-    // This is an example of a performance test case.
+    // 这是一个性能测试示例
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        // 在这里放置要测量时间的代码
+        for (int i = 0; i < 1000; i++) {
+            NSString *testString = [NSString stringWithFormat:@"test_%d", i];
+            [testString length];
+        }
     }];
 }
 

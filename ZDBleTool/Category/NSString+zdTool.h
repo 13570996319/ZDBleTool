@@ -159,6 +159,18 @@ NS_ASSUME_NONNULL_BEGIN
  * @return 转换后的二进制字符串 (8位或8位的倍数)
  */
 - (NSString *)zd_binaryStringFromHexString;
+/**
+ * 将十进制字符串转换为带K的十进制
+ * @return 转换后的带K的十进制
+ */
+- (NSString *)zd_thousandDecimalStringFromdecimalString;
+/**
+ * 将带K的十进制转换为十进制字符串
+ * @return 转换后的十进制字符串
+ */
+- (NSString *)zd_decimalStringFromThousandDecimalString;
+
+
 
 @end
 
